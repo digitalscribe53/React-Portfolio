@@ -48,6 +48,44 @@ body {
   section {
     padding: 2rem 0;
   }
+
+/* About Section Styles */
+.about {
+  text-align: left;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Profile Image Styles */
+.profile-image-container {
+  width: 15%;
+  padding-bottom: 15%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.profile-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about p {
+  flex-grow: 1;
+}
   
   /* Project Styles */
   .projects-container {
