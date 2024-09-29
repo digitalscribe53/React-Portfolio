@@ -4,16 +4,16 @@ import Project from './Project';
 const Portfolio = () => {
   const projects = [
     {
-      title: "Project 1",
-      image: "/path/to/project1-image.jpg",
-      deployedLink: "https://project1.com",
-      githubLink: "https://github.com/yourusername/project1"
+      title: "Tech Blog",
+      image: "/Tech-Blog-scrnsht.jpeg",
+      deployedLink: "https://tech-blog-95af.onrender.com/",
+      githubLink: "https://github.com/digitalscribe53/Tech-Blog"
     },
     // Add more projects here
   ];
 
   return (
-    <section>
+    <section className="portfolio">
       <h2>Portfolio</h2>
       <div className="projects-container">
         {projects.map((project, index) => (
