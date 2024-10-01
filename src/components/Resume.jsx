@@ -2,14 +2,14 @@ import React from 'react';
 
 const Resume = () => {
   const proficiencies = [
-    "HTML5", "CSS3", "JavaScript", "React", "Node.js",
-    "Express.js", "MongoDB", "SQL", "RESTful APIs", "Git"
+    "HTML5", "CSS3", "JavaScript", "React.js", "Node.js",
+    "Express.js", "MongoDB", "SQL and NoSQL", "RESTful APIs", "MVC Architecture", "Git and Version Control"
   ];
 
   return (
     <section>
       <h2>Resume</h2>
-      <a href="/path/to/your/resume.pdf" download>Download Resume</a>
+      <a href="/Kent_Ball_Web-Developer-Resume.pdf" download>Download Resume</a>
       <h3>Proficiencies</h3>
       <ul>
         {proficiencies.map((skill, index) => (
