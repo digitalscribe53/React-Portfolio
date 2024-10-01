@@ -4,7 +4,42 @@ body {
     line-height: 1.6;
     color: #333;
   }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
   
+  #root {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 20px; /* Adjust this value based on footer height */
+  }
+  
+  /* Background Image Styles */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('/pxfuel.jpg');
+  background-size: cover;
+  background-position: right center; /* This ensures the right side (with the lightbulb) is always visible */
+  filter: brightness(0.3); /* This darkens the entire image */
+  z-index: -1;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* This adds a semi-transparent overlay */
+  min-height: 100vh;
+  color: white; /* Ensure text is visible on dark background */
+}
   .container {
     max-width: 1100px;
     margin: auto;
