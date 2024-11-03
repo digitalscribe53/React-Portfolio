@@ -299,6 +299,13 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.button-container {
+  width: 100%;
+  margin: 1rem 0;
+  position: relative;
+  text-align: center;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   main {
@@ -345,6 +352,20 @@ button:disabled {
 
   .footer a {
     margin: 1rem 0; /* Vertical margin for stacked links on mobile */
+  }
+
+  .contact button {
+    width: 100%; /* Full width on mobile */
+    margin: 1rem 0; /* Adjust margins for mobile */
+    padding: 1rem; /* Slightly larger touch target on mobile */
+    font-size: 1.1rem; /* Slightly larger text on mobile */
+    background-color: #4a4a4a !important; /* Force background color on mobile */
+    color: white !important; /* Force text color on mobile */
+    opacity: 1 !important; /* Ensure full opacity */
+  }
+
+  .button-container {
+    margin: 1.5rem 0;
   }
 }
 
