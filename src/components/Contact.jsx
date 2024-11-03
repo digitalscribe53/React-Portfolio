@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
+  const [status, setStatus] = useState(''); // For showing success/error messages
 
   const validateField = (name, value) => {
     let error = '';
@@ -18,6 +20,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     setErrors({ ...errors, [name]: '' });
+    setStatus(''); // Clear any previous status messages
   };
 
   const handleBlur = (e) => {
@@ -37,10 +40,31 @@ const Contact = () => {
     });
 
     if (Object.keys(newErrors).length === 0) {
-      // Form is valid, submit the data here
-      console.log('Form submitted:', formData);
-      // Reset form after submission
-      setFormData({ name: '', email: '', message: '' });
+      // Prepare the email parameters
+      const templateParams = {
+        from_name: formData.name,
+        user_email: formData.email,
+        message: formData.message,
+        to_name: 'Kent', 
+      };
+
+      // Send the email
+      setStatus('sending');
+      emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          setStatus('success');
+          setFormData({ name: '', email: '', message: '' }); // Reset form
+        })
+        .catch((err) => {
+          console.log('FAILED...', err);
+          setStatus('error');
+        });
     } else {
       setErrors(newErrors);
     }
@@ -85,7 +109,15 @@ const Contact = () => {
           />
           {errors.message && <p className="error-text">{errors.message}</p>}
         </div>
-        <button type="submit">Send</button>
+        <button type="submit" disabled={status === 'sending'}>
+          {status === 'sending' ? 'Sending...' : 'Send'}
+        </button>
+        {status === 'success' && (
+          <p className="success-text">Message sent successfully!</p>
+        )}
+        {status === 'error' && (
+          <p className="error-text">Failed to send message. Please try again.</p>
+        )}
       </form>
     </section>
   );

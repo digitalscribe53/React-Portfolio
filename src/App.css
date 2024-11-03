@@ -281,6 +281,24 @@ button:hover {
   border-radius: 0.5rem;
 }
 
+.success-text {
+  color: #4CAF50;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.error-text {
+  color: #ff6b6b;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   main {
@@ -329,3 +347,4 @@ button:hover {
     margin: 1rem 0; /* Vertical margin for stacked links on mobile */
   }
 }
+
