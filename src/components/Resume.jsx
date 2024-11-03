@@ -3,7 +3,7 @@ import React from 'react';
 const Resume = () => {
   const proficiencies = [
     "JavaScript(ES6+)", "HTML5", "CSS3", "React.js", "Node.js",
-    "Express.js", "MongoDB", "SQL and NoSQL", "RESTful APIs", "MVC Architecture", "Git and Version Control"
+    "Express.js", "MongoDB", "SQL and NoSQL", "RESTful APIs", "Apollo GraphQL", "MVC Architecture", "Git and Version Control"
   ];
 
   return (

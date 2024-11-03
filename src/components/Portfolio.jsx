@@ -16,10 +16,10 @@ const Portfolio = () => {
       githubLink: "https://github.com/mirandarb/Book-Reviewer"
     },
     {
-      title: "Employee Tracker App",
-      image: "/images/employeetracker.png",
-      deployedLink: "https://drive.google.com/file/d/1lxiRq7z8vzTkgfTCElCj7e5kapEn9oA4/view",
-      githubLink: "https://github.com/digitalscribe53/Employee-Tracker"
+      title: "Job Board App",
+      image: "/images/job-board-app.png",
+      deployedLink: "https://neighborhood-jobs.onrender.com/",
+      githubLink: "https://github.com/mancillh/Job-Board"
     },
     {
       title: "Progressive Web App Text Editor",
