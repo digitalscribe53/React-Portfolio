@@ -10,7 +10,7 @@ const About = () => {
         </div>
         <div className="about-text">
           <p>
-            Hi, I'm Kent. I love to make things for the web. From building databases to integrating APIs- I enjoy collecting and molding data to display beautifully on web pages and robust applications. 
+            <span className="my-name">Hi, I'm Kent.</span> I love to make things for the web. From building databases to integrating APIs- I enjoy collecting and molding data to display beautifully on web pages and robust applications. 
           </p>
         </div>
       </div>

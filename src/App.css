@@ -309,6 +309,17 @@ button:hover {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 0.5rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #66a1bd;
+  font-size: 2.5rem;
+}
+
+.my-name {
+  font-size: 2.7rem;
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: bold; 
+  color: #667ebd;
 }
 
 .success-text {
@@ -374,6 +385,11 @@ button:disabled {
 
   .about-text {
     width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .my-name {
+    font-size: 1.7rem;
   }
 
   .footer nav {
