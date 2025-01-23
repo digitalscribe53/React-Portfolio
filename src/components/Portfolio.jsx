@@ -4,10 +4,10 @@ import Project from './Project';
 const Portfolio = () => {
   const projects = [
     {
-      title: "Tech Blog",
-      image: "/images/Tech-Blog-scrnsht.jpeg",
-      deployedLink: "https://tech-blog-95af.onrender.com/",
-      githubLink: "https://github.com/digitalscribe53/Tech-Blog"
+      title: "Movie Ratings App",
+      image: "/images/movie-ratings-app-scrnshot.JPG",
+      deployedLink: "https://movie-ratings.onrender.com/",
+      githubLink: "https://github.com/digitalscribe53/movie-ratings-react"
     },
     {
       title: "Google Books App",
