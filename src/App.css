@@ -33,6 +33,27 @@ body::before {
   z-index: -1;
 }
 
+.three-d-text {
+  font-family: 'Righteous', cursive;
+  font-size: 3.5rem;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  transform: rotateX(20deg) rotateY(-20deg);
+  background: linear-gradient(
+  45deg,
+  #00ffff,
+  #0099ff,
+  #0066ff
+);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 
+    0 0 5px rgba(255,255,255,0.2),
+    2px 2px 3px rgba(0,0,0,0.5);
+  letter-spacing: 2px;  /* Added some spacing between letters */
+}
+
 /* Content Wrapper */
 .content-wrapper {
   flex: 1;
