@@ -4,6 +4,12 @@ import Project from './Project';
 const Portfolio = () => {
   const projects = [
     {
+      title: "Wordle6 App",
+      image: "/images/wordle6-pro-pic.JPG",
+      deployedLink: "https://wordle6-app.netlify.app/",
+      githubLink: "https://github.com/digitalscribe53/Wordle6"
+    },
+    {
       title: "Movie Ratings App",
       image: "/images/movie-ratings-app-scrnshot.JPG",
       deployedLink: "https://movie-ratings.onrender.com/",
@@ -21,13 +27,7 @@ const Portfolio = () => {
       deployedLink: "https://neighborhood-jobs.onrender.com/",
       githubLink: "https://github.com/mancillh/Job-Board"
     },
-    {
-      title: "Progressive Web App Text Editor",
-      image: "/images/pwa-texteditor.JPG",
-      deployedLink: "https://pwa-text-editor-enhq.onrender.com/",
-      githubLink: "https://github.com/digitalscribe53/PWA-Text-Editor"
-    },
-    // Add more projects here
+    
   ];
 
   return (
