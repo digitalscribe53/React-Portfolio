@@ -433,6 +433,165 @@ button:disabled {
   text-align: center;
 }
 
+/* Add these styles to your main CSS file */
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .hamburger-icon {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hamburger-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger-icon.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-icon.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  /* Updates for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    /* Header and Navigation Mobile Styles */
+    .header-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+  
+    .header-name {
+      font-size: 2rem;
+      z-index: 999;
+    }
+  
+    /* Show hamburger menu on mobile */
+    .hamburger-menu {
+      display: block;
+      position: relative;
+      z-index: 1000;
+    }
+  
+    /* Hide navigation links by default on mobile */
+    .main-nav .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: right 0.3s ease;
+      z-index: 999;
+    }
+  
+    /* Show navigation links when menu is open */
+    .main-nav .nav-links.show {
+      right: 0;
+    }
+  
+    .main-nav ul li {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+  
+    .main-nav ul li a {
+      font-size: 1.3rem;
+      padding: 0.5rem 1rem;
+      display: block;
+    }
+  
+    /* Style for active link in mobile menu */
+    .main-nav ul li a.active {
+      color: #00ffff;
+      font-weight: bold;
+    }
+  
+    /* Home page adjustments to make dynamic text visible */
+    .home {
+      min-height: calc(100vh - 120px);
+      padding-top: 0;
+    }
+  
+    .home-content {
+      padding-top: 0;
+    }
+  
+    .professional-title {
+      font-size: 2.8rem;
+      margin-top: 0;
+    }
+  
+    .dynamic-text-container {
+      font-size: 1.6rem;
+      min-height: 2.8rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .header-name-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .header-name-link:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Make sure the header name maintains its styling */
+  .header-name-link .header-name {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Adjust for mobile */
+  @media (max-width: 768px) {
+    .header-name-link:hover {
+      transform: scale(1.02); /* Smaller scale effect on mobile */
+    }
+  }
+  
+  /* Additional media query for very small screens */
+  @media (max-width: 480px) {
+    .header-name {
+      font-size: 1.8rem;
+    }
+  
+    .professional-title {
+      font-size: 2.4rem;
+    }
+  
+    .dynamic-text-container {
+      font-size: 1.4rem;
+    }
+  }
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   main {
