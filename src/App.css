@@ -206,63 +206,85 @@ main {
 }
 
 /* Project Styles */
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
-}
-
-.project {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.project-image-container {
-  width: 100%;
-  padding-top: 56.25%;
-  position: relative;
-  overflow: hidden;
-}
-
-.project-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* New styles for project details and links */
-.project-details {
-  margin-top: 1rem;
-}
-
-.project-details h3 {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.project-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
-
-.project-links a {
-  color: #00ffff;
-  text-decoration: none;
-  text-align: center;
-  padding: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.project-links a:hover {
-  color: #ffffff;
-  transform: scale(1.05);
-}
+.portfolio {
+    width: 100%;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .project {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-image-container {
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .project:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  .project-details {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .project-details h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: auto;
+  }
+  
+  .project-links a {
+    color: #00ffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+  }
 
 /* Contact Form Styles */
 .contact form {
@@ -433,8 +455,6 @@ button:disabled {
   text-align: center;
 }
 
-/* Add these styles to your main CSS file */
-
 /* Hamburger Menu Styles */
 .hamburger-menu {
     display: none;
@@ -471,8 +491,23 @@ button:disabled {
   .hamburger-icon.open span:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
   }
+
+  /* Responsive adjustments for projects */
+ @media (max-width: 768px) {
+    .projects-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+  }
   
-  /* Updates for Mobile Responsiveness */
+  @media (max-width: 480px) {
+    .projects-container {
+      grid-template-columns: 1fr;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+  
   @media (max-width: 768px) {
     /* Header and Navigation Mobile Styles */
     .header-content {
