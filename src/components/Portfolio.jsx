@@ -10,6 +10,11 @@ const Portfolio = () => {
       githubLink: "https://github.com/digitalscribe53/Wordle6"
     },
     {
+        title: "Social Networking API",
+        image: "/images/social-network-api-image.JPG",
+        githubLink: "https://github.com/digitalscribe53/Social-Network-API"
+    },
+    {
       title: "Movie Ratings App",
       image: "/images/movie-ratings-app-scrnshot.JPG",
       deployedLink: "https://movie-ratings.onrender.com/",
