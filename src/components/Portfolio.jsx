@@ -37,7 +37,7 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio">
-      <h2 className="page-title">Portfolio</h2>
+      <h2 className="page-title">Projects</h2>
       <div className="projects-container">
         {projects.map((project, index) => (
           <Project key={index} {...project} />
