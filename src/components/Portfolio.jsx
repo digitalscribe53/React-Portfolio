@@ -11,8 +11,8 @@ const Portfolio = () => {
     },
     {
         title: "Social Networking API",
-        image: "/images/social-network-api-image.JPG",
-        imageLink: "/images/api-endpoints-visualization.JPG",
+        image: "/images/api-endpoints-visualization.jpg",
+        imageLink: "/images/api-endpoints-visualization.jpg",
         githubLink: "https://github.com/digitalscribe53/Social-Network-API"
     },
     {
