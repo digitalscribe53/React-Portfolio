@@ -695,3 +695,35 @@ button:disabled {
   }
 }
 
+/* Image link overlay */
+.image-link-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    z-index: 2;
+  }
+  
+  .image-link-overlay:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  .image-link-overlay span {
+    font-size: 16px;
+  }
+  
+  /* When hovering over the project, make the overlay more visible */
+  .project:hover .image-link-overlay {
+    opacity: 0.9;
+  }
