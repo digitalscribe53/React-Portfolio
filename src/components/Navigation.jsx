@@ -46,11 +46,11 @@ const Navigation = () => {
         </li>
         <li>
           <Link 
-            to="/portfolio" 
-            className={location.pathname === '/portfolio' ? 'active' : ''} 
+            to="/projects" 
+            className={location.pathname === '/projects' ? 'active' : ''} 
             onClick={closeMenu}
           >
-            Portfolio
+            Projects
           </Link>
         </li>
         <li>

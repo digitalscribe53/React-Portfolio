@@ -4,7 +4,7 @@ import Project from './Project';
 const Portfolio = () => {
   const projects = [
     {
-      title: "Wordle6 App",
+      title: "Wordle6 Game",
       image: "/images/wordle6-pro-pic.JPG",
       deployedLink: "https://wordle6-app.netlify.app/",
       githubLink: "https://github.com/digitalscribe53/Wordle6"
@@ -16,7 +16,7 @@ const Portfolio = () => {
         githubLink: "https://github.com/digitalscribe53/Social-Network-API"
     },
     {
-      title: "Movie Ratings App",
+      title: "Movie Ratings Website",
       image: "/images/movie-ratings-app-scrnshot.JPG",
       deployedLink: "https://movie-ratings.onrender.com/",
       githubLink: "https://github.com/digitalscribe53/movie-ratings-react"
