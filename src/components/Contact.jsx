@@ -72,7 +72,7 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      <h2 className="page-title">Contact Me</h2>
+      <h2 className="page-title">Send Me a Message</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>

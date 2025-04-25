@@ -10,7 +10,7 @@ const Resume = () => {
     <section className="resume">
       <h2 className="page-title">Resume</h2>
       <div className="download-link">
-      <a href="/Kent-Ball-Resume-2024.pdf" download>Download Resume</a>
+      <a href="/Kent-Ball-Resume-2024.pdf" download>Download Resume as PDF</a>
       </div>
       <h3>Proficiencies</h3>
       <ul>
