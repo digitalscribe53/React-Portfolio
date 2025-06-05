@@ -6,7 +6,7 @@ const About = () => {
       <h2></h2>
       <div className="about-content">
         <div className="profile-card">
-          <img src="/images/2025profilepic.jpg" alt="Kent Ball" className="profile-image" />
+          <img src="/images/profile-pic-dark-cropped.png" alt="Kent Ball" className="profile-image" />
           <div className="profile-card-overlay">
           </div>  
         </div>
