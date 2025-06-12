@@ -16,6 +16,18 @@ const Portfolio = () => {
         githubLink: "https://github.com/mancillh/Job-Board"
     },
     {
+        title: "MacroTracker PWA App",
+        image: "/images/macrotrakker.JPG",
+        deployedLink: "https://macrotrakker.netlify.app/",
+        githubLink: "https://github.com/digitalscribe53/MacroTracker"
+    },
+    {
+        title: "Wordle6 Game",
+        image: "/images/wordle6-pro-pic.JPG",
+        deployedLink: "https://wordle6-app.netlify.app/",
+        githubLink: "https://github.com/digitalscribe53/Wordle6"
+    },
+    {
         title: "Social Networking API",
         image: "/images/api-endpoints-visualization.jpg",
         imageLink: "/images/api-endpoints-visualization.jpg",
@@ -27,13 +39,7 @@ const Portfolio = () => {
       deployedLink: "https://googlebooks-app.onrender.com/",
       githubLink: "https://github.com/digitalscribe53/Googlebooks-App"
     },
-    {
-        title: "Wordle6 Game",
-        image: "/images/wordle6-pro-pic.JPG",
-        deployedLink: "https://wordle6-app.netlify.app/",
-        githubLink: "https://github.com/digitalscribe53/Wordle6"
-    }
-     
+    
   ];
 
   return (
