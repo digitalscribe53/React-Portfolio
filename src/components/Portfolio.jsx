@@ -10,6 +10,12 @@ const Portfolio = () => {
         githubLink: "https://github.com/digitalscribe53/movie-ratings-react"
     },
     {
+        title: "Dev Doc Generator",
+        image: "/images/devdocsnip.JPG",
+        deployedLink: "https://devdocgenerator.netlify.app/",
+        githubLink: "https://github.com/digitalscribe53/Dev-Doc-Generator"
+    },
+    {
         title: "Job Board Website",
         image: "/images/job-board-app.png",
         deployedLink: "https://neighborhood-jobs.onrender.com/",
